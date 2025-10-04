@@ -40,6 +40,12 @@ int main() {
 # Program-1: Factorial of a Number
 This program calculates the factorial of a number using recursion in C++. The function fact(int n) calls itself repeatedly with a smaller value of n until it reaches the base case. The base case here is when n is 0 (or less), where the function returns 1. For positive values, it returns n * fact(n-1), building the factorial step by step. The main() function takes user input and prints the factorial. This demonstrates how recursion simplifies solving problems by breaking them into smaller subproblems.
 
+# Logic:
+Factorial of a number n is defined as:
+    1. Base Case: factorial(0) = 1
+    2. Recursive Case: factorial(n) = n × factorial(n-1)
+The program keeps multiplying the current number with the factorial of the previous number until it reaches 0.
+
 # Algorithm:
 1. Start the program.
 2. Input a number n from the user.
@@ -52,6 +58,12 @@ This program calculates the factorial of a number using recursion in C++. The fu
 # Program-2: Addition of 'n' numbers
 This program calculates the sum of the first n natural numbers using recursion in C++. The function add(int n) calls itself with a smaller value of n until it reaches the base case. The base case occurs when n is 0, where the function returns 0. For other values, it returns n + add(n-1), effectively adding all numbers from n down to 1. The main() function takes input from the user and displays the calculated sum. This demonstrates how recursion can simplify iterative summation by breaking it into smaller subproblems.
 
+# Logic:
+The sum of first n numbers is defined as:
+    1. Base Case: sum(0) = 0
+    2. Recursive Case: sum(n) = n + sum(n-1)
+This program repeatedly adds the current number n to the sum of the previous numbers until it reaches 0.
+
 # Algorithm:
 1. Start the program.
 2. Input a number n from the user.
@@ -63,6 +75,11 @@ This program calculates the sum of the first n natural numbers using recursion i
 
 # Program-3: Reversing of a String
 This program reverses a string using recursion in C++. The function revstr(char *str) recursively calls itself with the next character of the string until it reaches the null character (end of the string). This acts as the base case, stopping further recursion. After reaching the end, the function prints each character while returning from the recursive calls, effectively reversing the string. The main() function takes input from the user and calls revstr() by passing the address of the first character of the string. This demonstrates how recursion can process data in reverse order by using the call stack.
+
+# Logic:
+The string is reversed by recursively swapping characters from the beginning and the end:
+    1. Base Case: If the starting index i is greater than or equal to the ending index j, stop recursion.
+    2. Recursive Case: Swap characters at positions i and j, then call the function again for (i+1, j-1).
 
 # Algorithm:
 1. Start the program.
